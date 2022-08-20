@@ -1,0 +1,56 @@
+<div class="container mt-3">
+    <div class="row">
+        <div class="col">
+            <p class="h3 fw-bold text-danger">Add Contact</p>
+            <p class="fst-list">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id obcaecati earum quas commodi beatae inventore veniam quibusdam cumque aliquam possimus, ut aliquid molestiae aut adipisci sapiente, rerum dolorem eius. Itaque.</p>
+        </div>
+        
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <form  #login="ngForm" (submit)="submitForm()">
+            <div class="mb-2">
+                <input type="text"  required="true" name="name" [(ngModel)]="contact.name" class="form-control" placeholder="Enter Name">
+            </div>
+            <div class="mb-2">
+                <input type="password"   required="true"  name="id" [(ngModel)]="contact.id" class="form-control" placeholder="Enter password">
+            </div>
+            <div class="mb-2">
+                <input type="email"  required="true" name="email" [(ngModel)]="contact.email" class="form-control" placeholder="Enter Email">
+            </div>
+            <div class="mb-2">
+                <input type="tel" required="true" class="form-control" name="mobile" [(ngModel)]="contact.mobile" placeholder="Enter mobile">
+            </div>
+            <div class="mb-2">
+                <input type="text" required="true" class="form-control" name="photo" [(ngModel)]="contact.photo" placeholder="Enter url">
+            </div>
+            <div class="mb-2">
+                <input type="text"  required="true"  name="company" [(ngModel)]="contact.company" class="form-control" placeholder="Enter company">
+            </div>
+            <div class="mb-2">
+                <input type="date"  required="true"  name="dob" [(ngModel)]="contact.dob" class="form-control">
+            </div>
+            <div class="mb-2">
+                <input type="text"   required="true" name="title" [(ngModel)]="contact.title" class="form-control" placeholder="Enter title">
+            </div>
+            <div class="mb-2">
+                <!-- <select class="form-control" name="group">
+                    <option value="" selected>Select a Group</option>
+                    <option value=""></option>
+
+                </select> -->
+            </div>
+            <div class="mb-2">
+                <input type="submit" class="btn btn-danger" value="create" [disabled]="login.invalid">
+            </div>
+        </form>
+        </div>
+        <div class="col-md-4">
+            <img [src]="contact.photo" alt="" class="contact-img">
+        </div>
+    </div>
+</div>
+<pre>{{contact |json}}</pre>

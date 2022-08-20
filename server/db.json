@@ -1,0 +1,66 @@
+{
+  "contacts": [
+    {
+      "id": "134445",
+      "name": "Kavya",
+      "company": "tataelxsi",
+      "email": "kavya@gmail.com",
+      "title": "Associate",
+      "mobile": "9122333444",
+      "dob": "2022-08-17",
+      "photo": "https://kindo.co.nz/wp-content/uploads/2016/03/3M.png",
+      "groupId": "3",
+      "phone": "8677675495959"
+    },
+    {
+      "name": "fff",
+      "id": "ffff",
+      "email": "ssssf",
+      "mobile": "fffffffffff",
+      "company": "fffffffffffffff",
+      "dob": "15-05-1998",
+      "photo": "https://kindo.co.nz/wp-content/uploads/2016/03/3M.png",
+      "title": "ffffffffffff"
+    },
+    {
+      "name": "Divya",
+      "id": "kaaaa",
+      "email": "anish.de@qumaone.com",
+      "mobile": "877726266666666",
+      "company": "ACCE",
+      "title": "Associate",
+      "dob": "15-05-1997",
+      "photo": "https://kindo.co.nz/wp-content/uploads/2016/03/3M.png",
+      "phone": "yyyyyy"
+    },
+    {
+      "photo": "https://img.freepik.com/free-vector/businessman-character-avatar-isolated_24877-60111.jpg?w=2000",
+      "mobile": "785566663453",
+      "email": "anish.de@pentechs.com",
+      "id": "gdeeyyey",
+      "name": "Alluri",
+      "company": "DUPPP",
+      "dob": "2022-08-24",
+      "title": "nccnncncn",
+      "phone": "nnnn"
+    }
+  ],
+  "groups": [
+    {
+      "id": "2",
+      "name": "Friend"
+    },
+    {
+      "id": "1",
+      "name": "collegue"
+    },
+    {
+      "id": "3",
+      "name": "Family"
+    },
+    {
+      "id": "4",
+      "name": "relative"
+    }
+  ]
+}

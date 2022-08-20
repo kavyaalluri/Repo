@@ -1,0 +1,61 @@
+<div class="container mt-3">
+    <div class="row">
+        <div class="col">
+            <p class="h3 fw-bold text-danger">Edit Contact</p>
+            <p class="fst-list">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id obcaecati earum quas commodi beatae inventore veniam quibusdam cumque aliquam possimus, ut aliquid molestiae aut adipisci sapiente, rerum dolorem eius. Itaque.</p>
+        </div>
+        
+    </div>
+</div>
+
+
+<pre>{{ contactId |json}}</pre>
+<pre>{{contact | json}}</pre>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <form  #login="ngForm" (submit)="submitData()">
+            <div class="mb-2">
+                <input type="text" required="true" name="name" [value]="contact.name" [(ngModel)]="contact.name" class="form-control" placeholder="Enter Name">
+            </div>
+            <div class="mb-2">
+                <input type="text" required="true" name="id" [value]="contact.id" [(ngModel)]="contact.id" class="form-control" placeholder="Enter ID">
+            </div>
+           <!-- <div class="mb-2">
+                <input type="text"  name="url" [value]="contact.url" [(ngModel)]="contact.photo"class="form-control" placeholder="photo Url">
+            </div> -->
+            <div class="mb-2">
+                <input type="email" required="true"  [value]="contact.email" [(ngModel)]="contact.email" name="email" class="form-control" placeholder="Enter Email">
+            </div>
+            <div class="mb-2">
+                <input type="tel" required="true" name="phone" [value]="contact.phone" [(ngModel)]="contact.phone" class="form-control" placeholder="Enter phone number">
+            </div>
+            <div class="mb-2">
+                <input type="text"  required="true" name="company" [value]="contact.company"  [(ngModel)]="contact.company" class="form-control" placeholder="Enter company">
+            </div>
+            <div class="mb-2">
+                <input type="date"  required="true" name="dob" [value]="contact.dob"  [(ngModel)]="contact.dob" class="form-control">
+            </div>
+            <div class="mb-2">
+                <input type="text"  required="true" name="title" [value]="contact.title" [(ngModel)]="contact.title" class="form-control" placeholder="Enter title">
+            </div>
+            <div class="col-md-4">
+                <img [src]="contact.photo" required="true"  name="photo"  [(ngModel)]="contact.photo"alt="" class="contact-img">
+            </div>
+          <!-- <div class="mb-2">
+                <select class="form-control">
+                    <option value="" selected>Select a Group</option>
+                    <option value="" *ngFor="let group of groups">{{group.name}}</option>
+
+                </select>
+            </div>  -->
+            <div class="mb-2">
+                <input type="submit" class="btn btn-danger my-1 mx-1" [disabled]="login.form.invalid" value="update">
+                <input type="submit" class="btn btn-dark" value="close" routerLink="/">
+            </div>
+        </form>
+        </div>
+       
+    </div>
+</div>
+

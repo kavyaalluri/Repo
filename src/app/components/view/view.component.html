@@ -1,0 +1,37 @@
+<div class="container mt-3">
+    <div class="row">
+        <div class="col">
+            <p class="h3 fw-bold text-danger">View Contact</p>
+            <p class="fst-list">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id obcaecati earum quas commodi beatae inventore veniam quibusdam cumque aliquam possimus, ut aliquid molestiae aut adipisci sapiente, rerum dolorem eius. Itaque.</p>
+        </div>
+        
+    </div>
+</div>
+<!---View Contact Details-->
+
+<pre>{{contactId | json}}</pre>
+<pre>{{contactdata | json}}</pre>
+<div class="container" *ngIf="isNotEmpty()">
+<div class="row">
+   <div class="col-sm-4">
+        <img [src]="contactdata.photo" alt="" class="contact-img">
+   </div>
+    <div class="col-sm-6">
+        <ul class="list-group">
+                <li class="list-group-item list-group-item-danger">Name : <span class="fw-bold">{{contactdata.name}}</span></li>
+                <li class="list-group-item list-group-item-danger">Id : <span class="fw-bold">{{contactdata.id}}</span></li>
+                <li class="list-group-item list-group-item-danger">Email : <span class="fw-bold">{{contactdata.email}}</span></li>
+                <li class="list-group-item list-group-item-danger">Company : <span class="fw-bold">{{contactdata.company}}</span></li>
+                <li class="list-group-item list-group-item-danger">Title : <span class="fw-bold">{{contactdata.title}}</span></li>
+                <li class="list-group-item list-group-item-danger">Mobile : <span class="fw-bold">{{contactdata.mobile}}</span></li>
+                <li class="list-group-item list-group-item-danger">DOB : <span class="fw-bold">{{contactdata.dob}}</span></li>
+        </ul>
+    </div>
+    <div class="col mt-3">
+        <a routerLink="/" class="btn btn-danger btn-lg mx-1">Back</a>
+        <a routerLink="/contacts/edit/:contactId" class="btn btn-primary btn-lg">Edit</a>
+    </div> 
+            
+</div>
+ </div>
+
